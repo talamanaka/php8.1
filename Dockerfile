@@ -6,6 +6,8 @@ ENV DEBIAN_FRONTEND noninteractive
 
 COPY bin/* /usr/local/bin/
 COPY src/* /var/www/html/
+COPY src/ /src
+
 RUN chmod -R 700 /usr/local/bin/
 RUN chmod -R 700 /var/www/html/*
 RUN rm -rf /var/www/html && mv /src /var/www/html &&\
