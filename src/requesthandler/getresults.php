@@ -9,6 +9,7 @@ $file_pointer = $finale_name ;
 
 function redirect($url)
 {
+    
     header('Location: '.$url);
     exit();
 }
@@ -18,7 +19,7 @@ function redirect($url)
   
 if (file_exists($file_pointer)) 
 {
-    redirect('http://google.com'); 
+    redirect($file_pointer); 
     #echo "The file $file_pointer exists";
     #header('Location:"' . $filename . '"');
 exit;
