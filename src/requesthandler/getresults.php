@@ -23,7 +23,7 @@ function getting_pdf($url)
 
     readfile($url); 
     #header('Location: '.$url);
-    #exit();
+    exit();
 }
 
 
