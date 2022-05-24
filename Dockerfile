@@ -218,7 +218,7 @@ USER root
 
 
 RUN find /var/www/html/ -type d -exec chmod 755 {} \; &&\
-    find /var/www/html/ -type f -exec chmod 644 {} \; &&\
+    find /var/www/html/ -type f -exec chmod 644 {} \; 
     #chmod -R 777 /var/www/html/app/cache /var/www/html/app/logs
 
 EXPOSE 8001
