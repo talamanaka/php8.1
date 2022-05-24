@@ -1,6 +1,6 @@
 FROM php:8.1-fpm
 
-MAINTAINER Jaroslav Hranicka <hranicka@outlook.com>
+MAINTAINER hasnaoui Yacine
 
 ENV DEBIAN_FRONTEND noninteractive
 
@@ -199,6 +199,9 @@ RUN apt-get update \
 
 EXPOSE 6379
 
+# add user 
+RUN groupadd -g 1000 www
+RUN useradd -u 1000 -ms /bin/bash -g www www
 
 # Clean
 RUN apt-get clean
