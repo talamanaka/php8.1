@@ -24,6 +24,7 @@ function getting_pdf($url)
 
     readfile($url);
     ob_end_flush();
+    redirect($url);
     #die();
     #header('Location: '.$url);
     #exit();
@@ -35,7 +36,7 @@ function getting_pdf($url)
 if (file_exists($file_pointer)) 
 {
     getting_pdf($file_pointer);
-    redirect($file_pointer); 
+     
    
     
     #echo "The file $file_pointer exists";
