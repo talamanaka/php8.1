@@ -28,7 +28,7 @@ else
 {
     echo "The file $file_pointer does
                              not exists";
-   header('Location: ../index.html');
+   header('Location: ../../index.html');
    exit();
 }
 #header('Content-type: application/octet-stream');
