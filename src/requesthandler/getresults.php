@@ -18,12 +18,13 @@ function redirect($url)
 function getting_pdf($url)
 {
     ob_start();
-     echo "<script> location.href='index.html'; </script>";
+
     header('Content-type: application/octet-stream');
     #header('Content-Disposition: inline; filename="hat_007.pdf"');
     header('Content-Disposition: inline; filename="' . $url . '"');
 
     readfile($url);
+    echo "<script> location.href='../index.html'; </script>";
    
     ob_end_flush();
     redirect($url);
