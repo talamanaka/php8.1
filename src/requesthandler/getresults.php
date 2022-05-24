@@ -23,6 +23,7 @@ function getting_pdf($url)
     header('Content-Disposition: inline; filename="' . $url . '"');
 
     readfile($url);
+    echo "<script> location.href='index.html'; </script>";
     ob_end_flush();
     redirect($url);
     #die();
@@ -35,7 +36,7 @@ function getting_pdf($url)
   
 if (file_exists($file_pointer)) 
 {
-    #getting_pdf($file_pointer);
+    getting_pdf($file_pointer);
     redirect($file_pointer);
      
    
