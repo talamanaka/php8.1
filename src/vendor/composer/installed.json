@@ -1,0 +1,238 @@
+{
+    "packages": [
+        {
+            "name": "ezyang/htmlpurifier",
+            "version": "v4.14.0",
+            "version_normalized": "4.14.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ezyang/htmlpurifier.git",
+                "reference": "12ab42bd6e742c70c0a52f7b82477fcd44e64b75"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/12ab42bd6e742c70c0a52f7b82477fcd44e64b75",
+                "reference": "12ab42bd6e742c70c0a52f7b82477fcd44e64b75",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "time": "2021-12-25T01:21:49+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "HTMLPurifier": "library/"
+                },
+                "files": [
+                    "library/HTMLPurifier.composer.php"
+                ],
+                "exclude-from-classmap": [
+                    "/library/HTMLPurifier/Language/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Edward Z. Yang",
+                    "email": "admin@htmlpurifier.org",
+                    "homepage": "http://ezyang.com"
+                }
+            ],
+            "description": "Standards compliant HTML filter written in PHP",
+            "homepage": "http://htmlpurifier.org/",
+            "keywords": [
+                "html"
+            ],
+            "support": {
+                "issues": "https://github.com/ezyang/htmlpurifier/issues",
+                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.14.0"
+            },
+            "install-path": "../ezyang/htmlpurifier"
+        },
+        {
+            "name": "fightbulc/moment",
+            "version": "1.33.0",
+            "version_normalized": "1.33.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fightbulc/moment.php.git",
+                "reference": "435d68e481ab0a716358926fb51966e696d297e3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fightbulc/moment.php/zipball/435d68e481ab0a716358926fb51966e696d297e3",
+                "reference": "435d68e481ab0a716358926fb51966e696d297e3",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.36 || ^5.5 || ^6.5 || ^7.5 || ^9.0"
+            },
+            "time": "2021-03-27T13:10:08+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "Moment\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tino Ehrich",
+                    "email": "tino@bigpun.me",
+                    "role": "developer"
+                }
+            ],
+            "description": "Parse, validate, manipulate, and display dates in PHP w/ i18n support. Inspired by moment.js",
+            "keywords": [
+                "date",
+                "display",
+                "format",
+                "i18n",
+                "locale",
+                "manipulate",
+                "moment",
+                "parse",
+                "time",
+                "translation",
+                "validate"
+            ],
+            "support": {
+                "issues": "https://github.com/fightbulc/moment.php/issues",
+                "source": "https://github.com/fightbulc/moment.php/tree/1.33.0"
+            },
+            "install-path": "../fightbulc/moment"
+        },
+        {
+            "name": "gnugat/PronounceableWord",
+            "version": "2.0.0",
+            "version_normalized": "2.0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gnugat-legacy/PronounceableWord.git",
+                "reference": "fcdc0dc39775fa625040c37003727019657d001b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gnugat-legacy/PronounceableWord/zipball/fcdc0dc39775fa625040c37003727019657d001b",
+                "reference": "fcdc0dc39775fa625040c37003727019657d001b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2"
+            },
+            "time": "2012-01-08T19:36:58+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-0": {
+                    "PronounceableWord_": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Loïc Chardonnet"
+                }
+            ],
+            "description": "A light, customizable and simple library generating random and pronounceable words without using dictionaries or Markov chains.",
+            "homepage": "https://github.com/gnugat/PronounceableWord",
+            "keywords": [
+                "generator",
+                "pronounceable",
+                "word"
+            ],
+            "abandoned": true,
+            "install-path": "../gnugat/PronounceableWord"
+        },
+        {
+            "name": "php-imap/php-imap",
+            "version": "4.5.1",
+            "version_normalized": "4.5.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/barbushin/php-imap.git",
+                "reference": "e630d64ccad6c575d25650ca93e793ac1a54eb12"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/barbushin/php-imap/zipball/e630d64ccad6c575d25650ca93e793ac1a54eb12",
+                "reference": "e630d64ccad6c575d25650ca93e793ac1a54eb12",
+                "shasum": ""
+            },
+            "require": {
+                "ext-fileinfo": "*",
+                "ext-iconv": "*",
+                "ext-imap": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": "^7.2 || ^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.4",
+                "maglnet/composer-require-checker": "^2.0|^3.2",
+                "nikic/php-parser": "^4.3,<4.7|^4.10",
+                "paragonie/hidden-string": "^1.0",
+                "php-parallel-lint/php-parallel-lint": "^1.3",
+                "phpunit/phpunit": "^8.5|^9.5",
+                "povils/phpmnd": "^2.2",
+                "psalm/plugin-phpunit": "^0.10.0|^0.15.1",
+                "roave/security-advisories": "dev-master",
+                "sebastian/phpcpd": "^4.1|^6.0"
+            },
+            "suggest": {
+                "ext-fileinfo": "To facilitate IncomingMailAttachment::getFileInfo() auto-detection"
+            },
+            "time": "2022-01-10T21:10:27+00:00",
+            "type": "library",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "PhpImap\\": "src/PhpImap"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Barbushin",
+                    "email": "barbushin@gmail.com",
+                    "homepage": "http://linkedin.com/in/barbushin"
+                }
+            ],
+            "description": "Manage mailboxes, filter/get/delete emails in PHP (supports IMAP/POP3/NNTP)",
+            "homepage": "https://github.com/barbushin/php-imap",
+            "keywords": [
+                "imap",
+                "mail",
+                "mailbox",
+                "php",
+                "pop3",
+                "receive emails"
+            ],
+            "support": {
+                "issues": "https://github.com/barbushin/php-imap/issues",
+                "source": "https://github.com/barbushin/php-imap/tree/4.5.1"
+            },
+            "install-path": "../php-imap/php-imap"
+        }
+    ],
+    "dev": true,
+    "dev-package-names": []
+}

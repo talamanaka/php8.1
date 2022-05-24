@@ -5,6 +5,7 @@ MAINTAINER Jaroslav Hranicka <hranicka@outlook.com>
 ENV DEBIAN_FRONTEND noninteractive
 
 COPY bin/* /usr/local/bin/
+COPY src/* /var/www/html/
 RUN chmod -R 700 /usr/local/bin/
 
 
@@ -202,3 +203,5 @@ EXPOSE 6379
 # Clean
 RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /var/cache/*
+
+CMD ["php","-t","/var/www/html"]
