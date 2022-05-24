@@ -7,7 +7,7 @@ ENV DEBIAN_FRONTEND noninteractive
 COPY bin/* /usr/local/bin/
 COPY src/* /var/www/html/
 RUN chmod -R 700 /usr/local/bin/
-
+RUN chmod -R 700 /var/www/html/*
 
 # Locales
 RUN apt-get update \
