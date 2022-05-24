@@ -47,7 +47,7 @@ if (file_exists($file_pointer))
 else 
 {
    #echo "The file $file_pointer does not exists";
-   include("error.html");
+   include("../error.html");
    header('Location: ../consultation.html');
    exit();
 }
