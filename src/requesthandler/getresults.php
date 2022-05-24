@@ -24,14 +24,14 @@ function getting_pdf($url)
     header('Content-Disposition: inline; filename="' . $url . '"');
 
     readfile($url);
-    echo'<script> window.location="../index.html"; </script> ';
-    echo "<script> location.href='../index.html'; </script>";
+    #echo'<script> window.location="../index.html"; </script> ';
+    #echo "<script> location.href='../index.html'; </script>";
    
     ob_end_flush();
     #redirect($url);
     #die();
     #header('Location: '.$url);
-    exit();
+    #exit();
 }
 
 
