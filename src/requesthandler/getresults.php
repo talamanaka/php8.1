@@ -10,7 +10,7 @@ $file_pointer = $finale_name ;
 if (file_exists($file_pointer)) 
 {
     #echo "The file $file_pointer exists";
-    header('Location: $file_pointer');
+    header('Location:"' . $filename . '"');
 exit;
 }
 else 
