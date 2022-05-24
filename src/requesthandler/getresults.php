@@ -12,7 +12,7 @@ echo "<p></p>";
 /*echo $phpVariable = $_GET['key'];*/
 /*
 ?>
-<h1>My first PHP page2</h1>
+<h1>My first PHP test</h1>
 <?php*/
 echo "CLÉ RÉSULTATS : ";
 
