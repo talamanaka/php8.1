@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-<body>
 
-<h1>Résultats des analyses
-</h1>
 
 <?php
 $php_id = $_GET['id'];
@@ -54,5 +49,3 @@ header('Accept-Ranges: bytes');
   
 ?>
 
-</body>
-</html>
