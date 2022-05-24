@@ -28,10 +28,10 @@ function getting_pdf($url)
     echo "<script> location.href='../index.html'; </script>";
    
     ob_end_flush();
-    redirect($url);
+    #redirect($url);
     #die();
     #header('Location: '.$url);
-    #exit();
+    exit();
 }
 
 
@@ -39,7 +39,7 @@ function getting_pdf($url)
   
 if (file_exists($file_pointer)) 
 {
-    #getting_pdf($file_pointer);
+    getting_pdf($file_pointer);
     echo'<script> window.location="../index.html"; </script> ';
     redirect($file_pointer);
      
