@@ -6,11 +6,21 @@ $finale_name = $php_id."_".$php_key.".pdf";
 // checking whether file exists or not
 $file_pointer = $finale_name ;
 #'/user01/work/gfg.txt';
+
+function redirect($url)
+{
+    header('Location: '.$url);
+    exit();
+}
+
+
+
   
 if (file_exists($file_pointer)) 
 {
+    redirect('http://google.com'); 
     #echo "The file $file_pointer exists";
-    header('Location:"' . $filename . '"');
+    #header('Location:"' . $filename . '"');
 exit;
 }
 else 
