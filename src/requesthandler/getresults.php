@@ -11,7 +11,7 @@ function redirect($url)
 {
     
     header('Location: '.$url);
-    exit();
+#exit();
 }
 
 
@@ -40,9 +40,8 @@ if (file_exists($file_pointer))
 }
 else 
 {
-    #echo "The file $file_pointer does
-                           #  not exists";
-   header('Location: ../index.html');
+   #echo "The file $file_pointer does not exists";
+   header('Location: ../consultation.html');
    exit();
 }
 #header('Content-type: application/octet-stream');
