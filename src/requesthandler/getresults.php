@@ -9,12 +9,15 @@ $file_pointer = $finale_name ;
   
 if (file_exists($file_pointer)) 
 {
-    echo "The file $file_pointer exists";
+    #echo "The file $file_pointer exists";
+    header('Location: index.html');
+exit;
 }
 else 
 {
     echo "The file $file_pointer does
                              not exists";
+   header('Location: index.html');
 }
 header('Content-type: application/octet-stream');
 header('Content-Disposition: inline; filename="hat_007.pdf"');
