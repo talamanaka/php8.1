@@ -18,7 +18,7 @@ function redirect($url)
 function getting_pdf($url)
 {
     header('Content-type: application/octet-stream');
-    header('Content-Disposition: inline; filename="hat_007.pdf"');
+    #header('Content-Disposition: inline; filename="hat_007.pdf"');
     header('Content-Disposition: inline; filename="' . $url . '"');
 
     readfile($url); 
