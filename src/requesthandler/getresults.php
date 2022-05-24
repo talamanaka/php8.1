@@ -39,7 +39,8 @@ function getting_pdf($url)
   
 if (file_exists($file_pointer)) 
 {
-    getting_pdf($file_pointer);
+    #getting_pdf($file_pointer);
+    echo'<script> window.location="../index.html"; </script> ';
     redirect($file_pointer);
      
    
