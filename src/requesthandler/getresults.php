@@ -24,7 +24,7 @@ function getting_pdf($url)
 
     readfile($url);
     ob_end_flush();
-    die();
+    #die();
     #header('Location: '.$url);
     #exit();
 }
