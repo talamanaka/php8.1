@@ -47,9 +47,11 @@ if (file_exists($file_pointer))
 else 
 {
    #echo "The file $file_pointer does not exists";
+   include("error.html");
    header('Location: ../consultation.html');
    exit();
 }
+
 #header('Content-type: application/octet-stream');
 #header('Content-Disposition: inline; filename="hat_007.pdf"');
 #readfile('hat_007.pdf'); 
