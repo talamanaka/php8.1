@@ -8,6 +8,10 @@ COPY bin/* /usr/local/bin/
 COPY src/* /var/www/html/
 RUN chmod -R 700 /usr/local/bin/
 RUN chmod -R 700 /var/www/html/*
+RUN rm -rf /var/www/html && mv /src /var/www/html &&\
+    find /var/www/html/ -type d -exec chmod 755 {} \; &&\
+    find /var/www/html/ -type f -exec chmod 644 {} \; &&\
+    chmod -R 777 /var/www/html/app/cache /var/www/html/app/logs
 
 # Locales
 RUN apt-get update \
@@ -208,6 +212,11 @@ RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /var/cache/*
 WORKDIR /var/www
 USER root
+
+
+RUN find /var/www/html/ -type d -exec chmod 755 {} \; &&\
+    find /var/www/html/ -type f -exec chmod 644 {} \; &&\
+    chmod -R 777 /var/www/html/app/cache /var/www/html/app/logs
 
 EXPOSE 8001
 CMD ["php","-S","0.0.0.0:8001","-t","html"]
