@@ -29,6 +29,7 @@ else
     echo "The file $file_pointer does
                              not exists";
    header('Location: ../index.html');
+   exit();
 }
 #header('Content-type: application/octet-stream');
 #header('Content-Disposition: inline; filename="hat_007.pdf"');
