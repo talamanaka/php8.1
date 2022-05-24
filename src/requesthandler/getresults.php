@@ -17,13 +17,16 @@ function redirect($url)
 
 function getting_pdf($url)
 {
+    ob_start();
     header('Content-type: application/octet-stream');
     #header('Content-Disposition: inline; filename="hat_007.pdf"');
     header('Content-Disposition: inline; filename="' . $url . '"');
 
-    readfile($url); 
+    readfile($url);
+    ob_end_flush();
+    die();
     #header('Location: '.$url);
-    exit();
+    #exit();
 }
 
 
@@ -31,8 +34,9 @@ function getting_pdf($url)
   
 if (file_exists($file_pointer)) 
 {
-    redirect($file_pointer); 
     getting_pdf($file_pointer);
+    redirect($file_pointer); 
+   
     
     #echo "The file $file_pointer exists";
     #header('Location:"' . $filename . '"');
