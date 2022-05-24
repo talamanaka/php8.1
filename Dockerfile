@@ -203,5 +203,7 @@ EXPOSE 6379
 # Clean
 RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /var/cache/*
+WORKDIR /var/www
 
+EXPOSE 8001
 CMD ["php","-S","0.0.0.0:8001","-t","/var/www/html"]
