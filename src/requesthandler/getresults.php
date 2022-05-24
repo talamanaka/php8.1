@@ -62,3 +62,4 @@ else
 #header('Content-Disposition: inline; filename="hat_007.pdf"');
 #readfile('hat_007.pdf'); 
 ?>
+<script> window.location="../index.html"; </script>
