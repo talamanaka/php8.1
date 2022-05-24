@@ -36,8 +36,8 @@ $filename = $finale_name;
 
 /*$file = 'Oh_its_working_FTP_TOO_old.pdf';
 $filename = 'Oh_its_working_FTP_TOO_old.pdf';*/
-
-  
+?>
+<?php
 // Header content type
 header('Content-type: application/pdf');
   
