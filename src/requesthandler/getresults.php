@@ -22,7 +22,7 @@ if (file_exists($file_pointer))
     redirect($file_pointer); 
     #echo "The file $file_pointer exists";
     #header('Location:"' . $filename . '"');
-exit;
+    exit();
 }
 else 
 {
