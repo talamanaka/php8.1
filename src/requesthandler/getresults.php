@@ -6,18 +6,21 @@
 </h1>
 
 <?php
-echo "ID PATIENT       : ";
-echo $php_id = $_GET['id'];
-echo "<p></p>";
+$php_id = $_GET['id'];
+$php_key = $_GET['key'];
+
+ #cho "ID PATIENT       : ";
+#cho $php_id = $_GET['id'];
+#cho "<p></p>";
 /*echo $phpVariable = $_GET['key'];*/
 /*
 ?>
 <h1>My first PHP test</h1>
 <?php*/
-echo "CLÉ RÉSULTATS : ";
+#cho "CLÉ RÉSULTATS : ";
 
 /*echo $phpVariable = $_GET['id'];*/
-echo $php_key = $_GET['key'];
+#cho $php_key = $_GET['key'];
 echo "<p></p>";
 
 $finale_name = $php_id."_".$php_key.".pdf";
